@@ -24,6 +24,7 @@
     const manualInput = document.getElementById('manualInput');
     const parseBtn = document.getElementById('parseBtn');
     const statusDiv = document.getElementById('status');
+    const instructionsDiv = document.querySelector('.instructions'); 
 
     // Show status message
     function showStatus(message, type = 'loading') {
@@ -92,6 +93,7 @@
         previewImg.src = e.target.result;
         imagePreview.style.display = 'block';
         resultDiv.style.display = 'none';
+
         detectQRInImage(e.target.result);
       };
       reader.onerror = () => {
@@ -234,6 +236,12 @@
           console.log('QR detected using:', attempts);
           showStatus('✅ QR code detected successfully!', 'success');
           processQRContent(result.data);
+                  
+            // Hide instructions after image is loaded ← ADD THIS LINE
+          if (instructionsDiv) {
+            instructionsDiv.style.display = 'none';
+          }
+
         } else {
           showStatus('❌ No QR code found. Try cropping the image to show only the QR code.', 'error');
         }
