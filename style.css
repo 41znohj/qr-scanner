@@ -1,0 +1,160 @@
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f9f9fb;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .instructions {
+      background: #e3f2fd;
+      border: 1px solid #114581;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .instructions h3 {
+      margin: 0 0 12px 0;
+      color: #114581;
+      font-size: 1rem;
+    }
+    .instructions ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .instructions li {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+    .instructions .tip {
+      background: #fff3cd;
+      border-left: 3px solid #ffc107;
+      padding: 8px 12px;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #856404;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 12px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #114581;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    #imagePreview {
+      display: none;
+      margin: 16px 0;
+      text-align: center;
+    }
+    #previewImg {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      background: #000;
+    }
+    #result {
+      background: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 16px;
+      display: none;
+    }
+    .field {
+      margin: 8px 0;
+    }
+    .field label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: #555;
+    }
+    .field span {
+      font-family: monospace;
+      word-break: break-all;
+      background: #f1f1f1;
+      padding: 6px;
+      border-radius: 4px;
+      display: block;
+    }
+    .copy-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .copy-group button {
+      flex: 1;
+      min-width: 120px;
+      font-size: 14px;
+      padding: 8px;
+    }
+    .info {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 8px;
+    }
+    .manual-input {
+      margin: 16px 0;
+      display: flex;
+      gap: 8px;
+    }
+    .manual-input input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .manual-input button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+    .status {
+      text-align: center;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      display: none;
+    }
+    .status.loading {
+      display: block;
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    .status.error {
+      display: block;
+      background: #ffebee;
+      color: #c62828;
+    }
+    .status.success {
+      display: block;
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+    .qr-type {
+      display: inline-block;
+      background: #114581;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
